@@ -31,4 +31,21 @@ defmodule Loggable do
         x1
     end
   end
+
+  @doc """
+  String placeholder for sensitive data
+
+  ## Examples
+
+  ```
+  iex> require Loggable
+  iex> Loggable.secret
+  "[SECRET]"
+  ```
+  """
+  defmacro secret do
+    quote location: :keep do
+      "[SECRET]"
+    end
+  end
 end
