@@ -1,0 +1,16 @@
+{
+  "coverage_options": {
+    "treat_no_relevant_lines_as_covered": false,
+    "minimum_coverage": 100
+  },
+  "skip_files": [
+    "test/*",
+
+    "lib/loggable_web.ex",
+    "lib/loggable/application.ex",
+    "lib/loggable/repo.ex",
+
+    "lib/loggable_web/endpoint.ex",
+    "lib/loggable_web/router.ex"
+  ]
+}
